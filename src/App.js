@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
-// import Todolist from './todolist'
-import List from './list'
-import { GlobalStyle} from './appcss.js'
-// import "antd/dist/antd.css";
+import { GlobalStyle} from './style.js'
+import {GlobaIconFont} from './static/iconfont/iconfont'
+import Header from './common/header'
+import store from './store'
+import {Provider} from 'react-redux'
 class App extends Component {
   render() {
     return (
       <div className="App">
         <GlobalStyle/>
-        <List/>
+        <GlobaIconFont />
+        <Provider store={store}>
+          <Header/>
+        </Provider>
       </div>
     );
   }
