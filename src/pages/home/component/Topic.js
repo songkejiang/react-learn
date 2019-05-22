@@ -20,6 +20,6 @@ class Topic extends Component {
     }
 }
 const mapState = (state) => ({
-   toipicList: state.home.get('topicList')
+   toipicList: state.get('home').get('topicList')
 })
 export default connect(mapState, null)(Topic)

@@ -88,6 +88,7 @@ export const SearchWraper=styled.div`
   float:left;
   height:56px;
   line-height:56px;
+  position:relative;
   .iconfont{
       position:relative;
       left:-30px;
@@ -99,4 +100,40 @@ export const SearchWraper=styled.div`
           color:#fff;
       }
   }
+`
+export const SearchInfo = styled.div`
+  position:absolute;
+  left:0;
+  top:56px;
+  width: 240px;
+  padding: 0 20px 10px;
+  background: green;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0,0,0,.2);
+  border-radius: 4px;
+`
+export const SearchInfoTitle = styled.div`
+  margin-top: 20px;
+  margin-bottom: 15px;
+  line-height:20px;
+  font-size:14px;
+  color:#969696;
+` 
+export const SearchInfoSwitch = styled.div`
+ float:right;
+ font-size: 13px;
+`
+export const SearchInfoItem = styled.a`
+ font-size: 12px;
+ line-height: 20px;
+ color:#333;
+ border:1px solid #ddd;
+ padding:0 5px;
+ float: left;
+ margin-bottom: 10px;
+ margin-right: 5px;
+ border-radius: 3px;
+`
+export const SearchInfoList = styled.div`
+
 `
